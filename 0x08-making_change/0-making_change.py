@@ -1,11 +1,13 @@
-def makeChange(coin_denominations, amount_due):
-    """
+#!/usr/bin/python3
+"""
     Returns the fewest number of coins needed to meet the amount_due.
     If it's not possible to make exact change, returns -1.
     
     coin_denominations: List of available coin denominations.
     amount_due: The total amount for which change is to be made.
-    """
+"""
+
+def makeChange(coin_denominations, amount_due):    
     if amount_due <= 0:
         # No change needed for non-positive amounts
         return 0
