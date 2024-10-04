@@ -40,7 +40,8 @@ def isWinner(rounds, upper_limits):
         str: Name of the winner ('Maria' or 'Ben'),
     """
     # Check if inputs are invalid
-    if rounds is None or upper_limits is None or rounds == 0 or upper_limits == []:
+    if (rounds is None or upper_limits is None or rounds == 0 or
+            upper_limits == []):
         return None
 
     # Initialize scores for Maria and Ben
